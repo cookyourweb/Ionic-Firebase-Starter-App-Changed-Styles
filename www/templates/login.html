@@ -1,0 +1,19 @@
+<ion-view title="Cookyourweb Firebase Ionic App " hasHeader hide-back-button="true">
+    <ion-content padding="true" class="has-header">
+        <form>
+            <ion-list list-inset>
+               
+             <label class="item item-input">
+                    <input type="text" placeholder="First Name" ng-model="creds.email">
+                    </label>
+                <label class="item item-input">
+                   <input type="password" placeholder="Password" ng-model="creds.password">
+                </label>
+            </ion-list>
+            <div class="spacer" style="height: 40px;"></div>
+            <a ng-click="doLoginAction(creds)" class="button button-energized button-block">Log in</a>
+            <a ng-click="doCreateUserAction(creds)" class="button button-positive button-clear button-block">Create account</a>
+        </form>
+    </ion-content>
+</ion-view>
+
